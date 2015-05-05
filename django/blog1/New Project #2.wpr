@@ -1,0 +1,19 @@
+#!wing
+#!version=5.0
+##################################################################
+# Wing IDE project file                                          #
+##################################################################
+[project attributes]
+proj.directory-list = [{'dirloc': loc('.'),
+                        'excludes': (),
+                        'filter': u'*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True}]
+proj.file-type = 'shared'
+proj.launch-config = {loc('manage.py'): ('project',
+        (u'runserver 127.0.0.1:8002 --noreload',
+         '')),
+                      loc('sblog/urls.py'): ('project',
+        (u'runserver 127.0.0.1:8002 --noreload',
+         ''))}
